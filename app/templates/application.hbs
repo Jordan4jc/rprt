@@ -1,3 +1,14 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<nav class="options-bar">
+	<h3>Enter month options, submit, and wait for the magic to happen!</h3>
+	<div class="slct">
+		<select id="past-month">
+			<option value="August 2014">August 2014</option>
+			<option value="September 2014">September 2014</option>
+		</select>
+	</div>
+	<input type="text" id="current-month" value="October 2014">
+	<button id="submit-button">Generate RPRT</button>
+	<button id="toggle-button" {{action 'toggleOptions'}}>Toggle Options</button>
+</nav>
 
 {{outlet}}
