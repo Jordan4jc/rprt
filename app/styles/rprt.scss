@@ -1,0 +1,53 @@
+@import 'compass/reset';
+
+@import 'components/page-options-nav';
+@import 'components/form-elements';
+@import 'components/page-header';
+
+@import 'helpers/fonts';
+
+html {
+	padding: .25in;
+  box-sizing: border-box;
+  @media print {
+  	padding: 0;
+  }
+}
+
+html, body {
+  font-family: "ff-tisa-sans-web-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+  height: 100%;
+  width: 100%;
+  color: $darkGrey;
+}
+
+.cf {
+  zoom: 1;
+  &:after, &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.ember-view {
+	height: 100%;
+	width: 100%;
+}
+
+main#page {
+	height: 100%;
+	width: 100%;
+}
+
+@import 'pages/page';
+
+@import 'pages/index';
+@import 'pages/title';
+@import 'pages/page-01';
+
+@import 'helpers/print';
