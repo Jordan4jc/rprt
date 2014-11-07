@@ -1,0 +1,6 @@
+@import 'compass/css3/font-face';
+
+@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-book.woff','/assets/fonts/gotham/gotham-book.otf','/assets/fonts/gotham/gotham-book.ttf','/assets/fonts/gotham/gotham-book.svg'),'/assets/fonts/gotham/gotham-book.eot', normal, normal);
+@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-bold.woff','/assets/fonts/gotham/gotham-bold.otf','/assets/fonts/gotham/gotham-bold.ttf','/assets/fonts/gotham/gotham-bold.svg'),'/assets/fonts/gotham/gotham-bold.eot', 500, normal);
+@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-medium.woff','/assets/fonts/gotham/gotham-medium.otf','/assets/fonts/gotham/gotham-medium.ttf','/assets/fonts/gotham/gotham-medium.svg'),'/assets/fonts/gotham/gotham-medium.eot', 600, normal);
+@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-black.woff','/assets/fonts/gotham/gotham-black.otf','/assets/fonts/gotham/gotham-black.ttf','/assets/fonts/gotham/gotham-black.svg'),'/assets/fonts/gotham/gotham-black.eot', 700, normal);

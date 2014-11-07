@@ -1,0 +1,28 @@
+@import 'compass/utilities/general/clearfix';
+
+header.page-header {
+	margin: 0 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	box-sizing: border-box;
+	padding: 0 5px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	@include clearfix();
+	font-family: 'rprt-gotham';
+	.left {
+		float: left;
+		p {
+			font-weight: 500;
+			span {
+				text-transform: uppercase;
+			}
+		}
+	}
+	.right {
+		float: right;
+		p {
+			font-weight: normal;
+		}
+	}
+}

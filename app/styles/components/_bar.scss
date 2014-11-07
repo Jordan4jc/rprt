@@ -1,0 +1,37 @@
+@import "compass/utilities/general/clearfix";
+
+.bar {
+	height: 95px;
+	border: 1px solid transparentize(#4e4e4e, 0.8);
+	border-radius: 2px;
+	.metric {
+		width: 50%;
+		height: 100%;
+		float: left;
+		position: relative;
+		&.blue {
+			background-color: $primary;
+		}
+		&.yellow {
+			background-color: $secondary;
+		}
+		.number {
+			color: white;
+			font-size: 36px;
+			font-family: "rprt-gotham";
+			font-weight: 700;
+			display: block;
+			height: 95px;
+			line-height: 95px;
+		}
+		.text {
+			display: block;
+			font-family: "rprt-gotham";
+			font-size: 18px;
+			font-weight: normal;
+			display: block;
+			position: relative;
+			bottom: -26px;
+		}
+	}
+}

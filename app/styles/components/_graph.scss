@@ -1,0 +1,58 @@
+@import 'compass/css3/transform';
+
+@import 'helpers/variables';
+
+.graph {
+	height: 430px;
+	margin-top: 30px;
+	@extend .cf;
+	.graph-section {
+		width: 50%;
+		float: left;
+		height: 100%;
+		@extend .cf;
+	}
+	.graph-bar-wrap {
+		width: 50%;
+		float: left;
+		height: 100%;
+		position: relative;
+	}
+	.graph-bar {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		@include translateX(-50%);
+		height: 50%;
+		background-color: lightgrey;
+		width: 30px;
+		&.blue {
+			background-color: $primary;
+		}
+		&.yellow {
+			background-color: $secondary;
+		}
+		.text {
+			color: white;
+			font-size: 15px;
+			display: block;
+			text-transform: uppercase;
+			font-family: "rprt-gotham";
+			font-weight: 500;
+			@include transform-origin(0,0,false);
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			@include transform(rotate(-90deg) translateY(-50%));
+		}
+		.number {
+			font-family: "rprt-gotham";
+			font-weight: normal;
+			font-size: 24px;
+			position: absolute;
+			bottom: -36px;
+			left: 50%;
+			@include translateX(-50%);
+		}
+	}
+}
