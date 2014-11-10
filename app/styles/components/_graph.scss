@@ -17,12 +17,20 @@
 		float: left;
 		height: 100%;
 		position: relative;
+		&:nth-of-type(odd) {
+			.graph-bar {
+				right: 25px;
+			}
+		}
+		&:nth-of-type(even) {
+			.graph-bar {
+				left: 25px;
+			}
+		}
 	}
 	.graph-bar {
 		position: absolute;
 		bottom: 0;
-		left: 50%;
-		@include translateX(-50%);
 		height: 50%;
 		background-color: lightgrey;
 		width: 30px;
