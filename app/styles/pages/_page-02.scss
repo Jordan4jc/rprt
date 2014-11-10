@@ -1,5 +1,8 @@
 #page-02 {
-	
 	@import "components/bar";
 	@import "components/graph";
+
+	.mobile-sessions {
+		margin-bottom: 160px;
+	}
 }
