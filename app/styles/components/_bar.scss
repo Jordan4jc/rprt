@@ -10,6 +10,32 @@
 		font-family: 'rprt-gotham', sans-serif;
 		font-weight: 600;
 	}
+	span.bar-title-number {
+		font-size: 144px;
+		font-family: 'rprt-gotham', sans-serif;
+		font-weight: 600;
+		display: block;
+		line-height: 105px;
+		&.blue {
+			color: $primary;
+		}
+		&.yellow {
+			color: $secondary;
+		}
+	}
+	span.bar-title-number-sub-head {
+		font-size: 28px;
+		font-family: 'rprt-gotham', sans-serif;
+		font-weight: 600;
+		display: block;
+		margin-bottom: 65px;
+		&.blue {
+			color: $primary;
+		}
+		&.yellow {
+			color: $secondary;
+		}
+	}
 	.bar {
 		height: 95px;
 		border: 1px solid transparentize(#4e4e4e, 0.8);
@@ -22,6 +48,15 @@
 			position: relative;
 			&.blue {
 				background-color: $primary;
+			}
+			&.blue__shade-1 {
+				background-color: shade($primary, 10);
+			}
+			&.blue__shade-2 {
+				background-color: shade($primary, 20);
+			}
+			&.blue__shade-3 {
+				background-color: shade($primary, 30);
 			}
 			&.yellow {
 				background-color: $secondary;
@@ -43,6 +78,15 @@
 				display: block;
 				position: relative;
 				bottom: -26px;
+			}
+			.metric-label {
+				display: inline-block;
+				white-space: nowrap;
+				@include transform-origin(right, top);
+				@include transform(rotate(-45deg) translateY(-50%));
+				position: absolute;
+				right: 50%;
+				bottom: -25px;
 			}
 		}
 	}
