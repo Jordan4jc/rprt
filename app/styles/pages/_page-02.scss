@@ -2,6 +2,15 @@
 	@import "components/bar";
 	@import "components/graph";
 
+	.previous-month {
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-bottom: 44px;
+		display: block;
+		text-align: center;
+		font-family: 'rprt-gotham', sans-serif;
+		font-weight: 600;
+	}
 	.mobile-sessions {
 		margin-bottom: 160px;
 	}
