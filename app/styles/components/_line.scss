@@ -1,0 +1,56 @@
+.line-graph {
+	width: 600px;
+	margin: 0 auto;
+	span.graph-title {
+		font-family: "rprt-gotham", sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 55px;
+		display: inline-block;
+	}
+	.metrics {
+		@include clearfix();
+		div.text {
+			float: left;
+			width: 16.6666667%;
+			span.text {
+				display: block;
+				font-size: 18px;
+				font-family: "rprt-gotham", sans-serif;
+				text-align: right;
+				height: 30px;
+				line-height: 34px;
+				margin-bottom: 14px;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+		div.lines {
+			float: right;
+			width: 83.3333333%;
+			@include clearfix();
+			@include box-sizing(border-box);
+			padding-left: 6px;
+			div.line {
+				height: 30px;
+				line-height: 30px;
+				background-color: #ddd;
+				display: block;
+				width: 20%;
+				margin-bottom: 14px;
+				color: white;
+				&.blue {
+					background-color: $primary;
+				}
+				&.yellow {
+					background-color: $secondary;
+				}
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
