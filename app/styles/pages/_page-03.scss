@@ -1,3 +1,20 @@
 #page-03 {
 	@import "components/bar";
+	@import "components/line";
+	.col.no-pad {
+		padding: 0;
+	}
+	.social-activity-twitter, .social-activity-facebook {
+		padding-bottom: 68px;
+		margin-bottom: 60px;
+	}
+	h3 {
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-bottom: 44px;
+		display: block;
+		text-align: center;
+		font-family: 'rprt-gotham', sans-serif;
+		font-weight: 600;
+	}
 }
