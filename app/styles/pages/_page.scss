@@ -12,8 +12,8 @@ section.page {
 	}
 	.wrap {
 		position: relative;
-		top: 50%;
-		@include translateY(-50%);
+		// top: 50%;
+		// @include translateY(-50%);
 		.col {
 			width: 50%;
 			box-sizing: border-box;
