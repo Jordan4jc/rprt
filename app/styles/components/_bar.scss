@@ -61,6 +61,15 @@
 			&.yellow {
 				background-color: $secondary;
 			}
+			&.yellow__shade-1 {
+				background-color: shade($secondary, 5);
+			}
+			&.yellow__shade-2 {
+				background-color: shade($secondary, 10);
+			}
+			&.yellow__shade-3 {
+				background-color: shade($secondary, 15);
+			}
 			.number {
 				color: white;
 				font-size: 36px;
