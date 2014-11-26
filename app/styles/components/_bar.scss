@@ -9,6 +9,9 @@
 		text-align: center;
 		font-family: 'rprt-gotham', sans-serif;
 		font-weight: 600;
+		&.bold {
+			font-weight: 700;
+		}
 	}
 	span.bar-title-number {
 		font-size: 144px;
