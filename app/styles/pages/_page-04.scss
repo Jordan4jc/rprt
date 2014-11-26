@@ -3,5 +3,90 @@
 	.col {
 		float: none;
 		margin: 0 auto;
+		padding: 0;
+	}
+	.referrals {
+		padding-bottom: 108px;
+		margin-bottom: 50px;
+	}
+	.previous-month-referrals {
+		font-family: "rprt-gotham", sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 62px;
+	}
+	h3 {
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		display: block;
+		text-align: center;
+		font-family: 'rprt-gotham', sans-serif;
+		font-weight: 600;
+	}
+	.numbers {
+		color: $secondary;
+		@include clearfix();
+		.big-number {
+			width: 30%;
+			float: left;
+			text-align: left;
+			span.number {
+				font-size: 86px;
+				font-family: "rprt-gotham", sans-serif;
+				font-weight: 500;
+				display: block;
+				line-height: 62px;
+				margin-bottom: 10px;
+			}
+			span.number-text {
+				display: block;
+				font-size: 21px;
+				font-family: "rprt-gotham", sans-serif;
+				font-weight: 500;
+				line-height: 16px;
+				text-transform: uppercase;
+			}
+		}
+		.small-numbers {
+			width: 70%;
+			float: right;
+			@include clearfix();
+			margin-bottom: 60px;
+			.metric {
+				float: left;
+				height: 44px;
+				line-height: 44px;
+				@include clearfix();
+				&:nth-of-type(odd) {
+					width: 35%;
+				}
+				&:nth-of-type(even) {
+					width: 65%;
+				}
+				span.number {
+					font-size: 30px;
+					font-family: "rprt-gotham", sans-serif;
+					font-weight: 600;
+					display: inline-block;
+					width: 21%;
+					float: left;
+					text-align: right;
+				}
+				span.text {
+					font-size: 18px;
+					font-family: "rprt-gotham", sans-serif;
+					color: $darkGrey;
+					text-transform: uppercase;
+					display: inline-block;
+					float: right;
+					width: 79%;
+					text-align: left;
+					@include box-sizing(border-box);
+					padding-left: 10px;
+				}
+			}
+		}
 	}
 }
