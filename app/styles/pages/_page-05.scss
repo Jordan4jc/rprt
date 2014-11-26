@@ -1,4 +1,10 @@
 #page-05 {
 	@import "components/bar";
-	
+	.bar-wrap {
+		.bar {
+			.metric {
+				min-width: 20%;
+			}
+		}
+	}
 }
