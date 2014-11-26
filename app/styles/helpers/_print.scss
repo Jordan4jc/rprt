@@ -1,6 +1,17 @@
 @media print{
+	// Page
 	@page {
 		size: landscape;
 		margin: .25in;
+	}
+	#index {
+		display: none;
+	}
+	.ember-view {
+		height: 100%;
+	}
+	// Page Header
+	header.page-header {
+		margin-top: 0;
 	}
 }

@@ -7,6 +7,10 @@
 @import 'helpers/fonts';
 @import 'helpers/classes';
 
+* {
+  -webkit-print-color-adjust: exact
+}
+
 html {
 	padding: .25in;
   box-sizing: border-box;
