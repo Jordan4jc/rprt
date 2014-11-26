@@ -1,5 +1,8 @@
 #page-05 {
 	@import "components/bar";
+	.col:nth-of-type(-n+2) {
+		margin-bottom: 230px;
+	}
 	.bar-wrap {
 		.bar {
 			.metric {
