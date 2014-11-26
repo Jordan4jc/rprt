@@ -6,7 +6,7 @@
 			<option value="September 2014">September 2014</option>
 		</select>
 	</div>
-	<input type="text" id="current-month" value="October 2014">
+	<input type="text" id="current-month" {{bind-attr value="fullDateToParse"}}>
 	<button id="submit-button">Generate RPRT</button>
 	<button id="toggle-button" {{action 'toggleOptions'}}>Toggle Options</button>
 </nav>
