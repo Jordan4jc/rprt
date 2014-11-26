@@ -15,6 +15,10 @@ html {
   }
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 html, body {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
 	font-style: normal;
