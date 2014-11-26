@@ -1,2 +1,30 @@
 #page-06 {
+	.col {
+		float: none !important;
+		margin: 0 auto;
+		max-width: 840px;
+		padding: 0;
+		width: 90%;
+	}
+	.traffic {
+		font-family: "rprt-gotham", sans-serif;
+		font-weight: 500;
+		font-size: 36px;
+		color: $primary;
+		.item {
+			margin-bottom: 25px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			@include clearfix();
+			span.url {
+				display: inline-block;
+				float: left;
+			}
+			span.count {
+				display: inline-block;
+				float: right;
+			}
+		}
+	}
 }
