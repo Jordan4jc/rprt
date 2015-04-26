@@ -30,7 +30,7 @@ export default Ember.Controller.extend({
 				title: "Return Sessions",
 				number: "78%"
 			}
-		]
+		];
 	},
 
 	actions: {
