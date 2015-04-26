@@ -19,6 +19,20 @@ export default Ember.Controller.extend({
 		return this.get('monthToParse') + ' ' + this.get('yearToParse');
 	}.property('monthToParse', 'yearToParse'),
 
+	// Bar Graph Component Data
+	total_sessions: function() {
+		return [
+			{
+				title: "New Sessions",
+				number: "22%"
+			},
+			{
+				title: "Return Sessions",
+				number: "78%"
+			}
+		]
+	},
+
 	actions: {
 		toggleOptions: function() {
 			Ember.$('nav.options-bar').toggleClass('closed');
