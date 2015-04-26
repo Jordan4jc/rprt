@@ -1,0 +1,34 @@
+<aside {{bind-attr class="barClass"}}>
+	{{#if barTitle}}
+		<span class="bar-title">
+			{{barTitle}}
+		</span>
+	{{/if}}
+	<div class="bar">
+		{{#each metric in metrics}}
+			<div {{bind-attr class="metric.metricClass" style="metric.metricStyle"}}>
+				<span class="number">{{metric.metricNumber}}</span>
+				{{#if metric.metricText}}
+				<span class="text">{{metric.metricText}}</span>
+				{{/if}}
+			</div>
+		{{/each}}
+		<div style="clear: both"></div>
+		{{!-- <div class="new-sessions metric blue" style="width: 22%;">
+			<span class="number">22%</span>
+			<span class="text">New Sessions</span>
+		</div>
+		<div class="return-sessions metric yellow" style="width: 78%;">
+			<span class="number">78%</span>
+			<span class="text">Return Sessions</span>
+		</div> --}}
+	</div>
+	{{#if barText}}
+			{{#each text in barText}}
+				<span class="bar-text">
+					{{text}}
+				</span>
+			{{/each}}
+			<div style="clear: both"></div>
+	{{/if}}
+</aside>
