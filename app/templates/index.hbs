@@ -33,36 +33,7 @@
 		<div class="col">
 			<h3 class="previous-month">Previous Month Comparison</h3>
 			<strong class="previous-month-sessions">231 Sessions in September</strong>
-			<aside class="graph">
-				<div class="graph-section">
-					<div class="graph-bar-wrap">
-						<div class="graph-bar blue" style="height: 26%;">
-							<span class="text">September</span>
-							<span class="number">26%</span>
-						</div><!-- graph-bar -->
-					</div><!-- graph-bar-wrap -->
-					<div class="graph-bar-wrap">
-						<div class="graph-bar blue" style="height: 22%;">
-							<span class="text">October</span>
-							<span class="number">22%</span>
-						</div><!-- graph-bar -->
-					</div><!-- graph-bar-wrap -->
-				</div>
-				<div class="graph-section">
-					<div class="graph-bar-wrap">
-						<div class="graph-bar yellow" style="height: 74%;">
-							<span class="text">September</span>
-							<span class="number">74%</span>
-						</div><!-- graph-bar -->
-					</div><!-- graph-bar-wrap -->
-					<div class="graph-bar-wrap">
-						<div class="graph-bar yellow" style="height: 78%;">
-							<span class="text">October</span>
-							<span class="number">78%</span>
-						</div><!-- graph-bar -->
-					</div><!-- graph-bar-wrap -->
-				</div>
-			</aside>
+			{{vertical-graph metrics=controller.total_sessions_comparison}}
 		</div><!-- col -->
 	</div>
 </section>
