@@ -25,6 +25,12 @@
 				&:first-child {
 					text-align: left;
 				}
+				&.plus {
+					color: $success;
+				}
+				&.minus {
+					color: $error;
+				}
 			}
 			&.spacer {
 				td {
