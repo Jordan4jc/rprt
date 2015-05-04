@@ -13,6 +13,16 @@
 		float: left;
 		height: 100%;
 		@extend .cf;
+		&:first-of-type {
+			.graph-bar {
+				background-color: $primary;
+			}
+		}
+		&:last-of-type {
+			.graph-bar {
+				background-color: $secondary;
+			}
+		}
 	}
 	.graph-bar-wrap {
 		width: 50%;
@@ -36,12 +46,6 @@
 		height: 50%;
 		background-color: lightgrey;
 		width: 30px;
-		&.blue {
-			background-color: $primary;
-		}
-		&.yellow {
-			background-color: $secondary;
-		}
 		.text {
 			color: white;
 			font-size: 15px;
