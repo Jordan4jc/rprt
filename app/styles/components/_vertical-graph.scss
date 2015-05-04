@@ -15,12 +15,16 @@
 		@extend .cf;
 		&:first-of-type {
 			.graph-bar {
-				background-color: $primary;
+				.text-wrap {
+					background-color: $primary;
+				}
 			}
 		}
 		&:last-of-type {
 			.graph-bar {
-				background-color: $secondary;
+				.text-wrap {
+					background-color: $secondary;
+				}
 			}
 		}
 	}
@@ -46,6 +50,13 @@
 		height: 50%;
 		background-color: lightgrey;
 		width: 30px;
+		.text-wrap {
+			width: 100%;
+		  height: 100%;
+		  overflow: hidden;
+		  position: relative;
+		  z-index: 1;
+		}
 		.text {
 			color: white;
 			font-size: 15px;
@@ -58,6 +69,11 @@
 			bottom: 0;
 			left: 50%;
 			@include transform(rotate(-90deg) translateY(-50%));
+		}
+		.dark-text {
+			@extend .text;
+			color: $darkGrey;
+			z-index: 0;
 		}
 		.number {
 			font-family: "rprt-gotham";

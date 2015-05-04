@@ -4,7 +4,10 @@
 			{{#each metric in set}}
 				<div class="graph-bar-wrap">
 					<div class="graph-bar" {{bind-attr style="metric.metricStyle"}}>
-						<span class="text">{{metric.metricText}}</span>
+						<div class="text-wrap">
+							<span class="text">{{metric.metricText}}</span>
+						</div>
+						<span class="dark-text">{{metric.metricText}}</span>
 						<span class="number">{{metric.metricNumber}}</span>
 					</div><!-- graph-bar -->
 				</div><!-- graph-bar-wrap -->
