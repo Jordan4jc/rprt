@@ -84,4 +84,30 @@ export default Ember.ArrayController.extend({
 			metricStyle: "width: 78%"
 		}
 	],
+	referrals: [
+		{
+			metricNumber: "0",
+			metricLabel: "Twitter",
+			metricClass: "metric blue__shade-3",
+			metricStyle: "width: 5%"
+		},
+		{
+			metricNumber: "10",
+			metricLabel: "Facebook",
+			metricClass: "metric blue__shade-2",
+			metricStyle: "width: 15%"
+		},
+		{
+			metricNumber: "62",
+			metricLabel: "Direct",
+			metricClass: "metric blue__shade-1",
+			metricStyle: "width: 25%"
+		},
+		{
+			metricNumber: "149",
+			metricLabel: "Other",
+			metricClass: "metric blue",
+			metricStyle: "width: 55%"
+		}
+	]
 });
