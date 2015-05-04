@@ -58,6 +58,32 @@ export default Ember.ArrayController.extend({
 		}
 	],
 	desktop_sessions_bar_text: [0,221],
+	device_sessions_comparison: [
+		[
+			{
+				metricNumber: "74",
+				metricText: "September",
+				metricStyle: "height: 17%"
+			},
+			{
+				metricNumber: "45",
+				metricText: "October",
+				metricStyle: "height: 10%"
+			},
+		],
+		[
+			{
+				metricNumber: "156",
+				metricText: "September",
+				metricStyle: "height: 36%"
+			},
+			{
+				metricNumber: "176",
+				metricText: "October",
+				metricStyle: "height: 40%"
+			}
+		]
+	],
 	twitter: [
 		{
 			metricNumber: "0",
