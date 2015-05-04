@@ -58,4 +58,30 @@ export default Ember.ArrayController.extend({
 			metricStyle: "width: 78%"
 		}
 	],
+	facebook: [
+		{
+			metricNumber: "0",
+			metricLabel: "12AM-7AM",
+			metricClass: "metric yellow__shade-3",
+			metricStyle: "width: 5%"
+		},
+		{
+			metricNumber: "0",
+			metricLabel: "7AM-12PM",
+			metricClass: "metric yellow__shade-2",
+			metricStyle: "width: 5%"
+		},
+		{
+			metricNumber: "4",
+			metricLabel: "12PM-5PM",
+			metricClass: "metric yellow__shade-1",
+			metricStyle: "width: 12%"
+		},
+		{
+			metricNumber: "7",
+			metricLabel: "5PM-12AM",
+			metricClass: "metric yellow",
+			metricStyle: "width: 78%"
+		}
+	],
 });
