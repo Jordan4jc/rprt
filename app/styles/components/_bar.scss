@@ -39,6 +39,16 @@
 			color: $secondary;
 		}
 	}
+	&.blue {
+		span.bar-title, span.bar-title-number, span.bar-title-number-sub-head {
+			color: $primary
+		}
+	}
+	&.yellow {
+		span.bar-title, span.bar-title-number, span.bar-title-number-sub-head {
+			color: $secondary
+		}
+	}
 	.bar {
 		height: 95px;
 		border: 1px solid transparentize(#4e4e4e, 0.8);
