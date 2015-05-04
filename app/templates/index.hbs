@@ -212,84 +212,16 @@
 	<h2>Viewers by Age</h2>
 	<div class="wrap cf">
 		<div class="col">
-			<aside class="bar-wrap 18-24-years">
-				<span class="bar-title">
-					18 - 24 Years of Age
-				</span>
-				<div class="bar">
-					<div class="metric blue" style="width: 27.5%;">
-						<span class="number">27.5%</span>
-					</div>
-					<div style="clear: both"></div>
-				</div>
-				<span class="bar-text text-left">
-					0
-				</span>
-				<span class="bar-text text-right">
-					100
-				</span>
-				<div style="clear: both"></div>
-			</aside>
+			{{bar-graph metrics=controller.age_range_1 barClass="bar-wrap 18-24-years" barTitle="18 - 24 Years of Age" barText=controller.age_range_1_text}}
 		</div><!-- col -->
 		<div class="col">
-			<aside class="bar-wrap 18-24-years">
-				<span class="bar-title">
-					35 - 44 Years of Age
-				</span>
-				<div class="bar">
-					<div class="metric blue" style="width: 15.5%;">
-						<span class="number">15.5%</span>
-					</div>
-					<div style="clear: both"></div>
-				</div>
-				<span class="bar-text text-left">
-					0
-				</span>
-				<span class="bar-text text-right">
-					100
-				</span>
-				<div style="clear: both"></div>
-			</aside>
+			{{bar-graph metrics=controller.age_range_2 barClass="bar-wrap 35-44-years" barTitle="35 - 44 Years of Age" barText=controller.age_range_2_text}}
 		</div><!-- col -->
 		<div class="col">
-			<aside class="bar-wrap 18-24-years">
-				<span class="bar-title">
-					25 - 34 Years of Age
-				</span>
-				<div class="bar">
-					<div class="metric blue" style="width: 33.5%;">
-						<span class="number">33.5%</span>
-					</div>
-					<div style="clear: both"></div>
-				</div>
-				<span class="bar-text text-left">
-					0
-				</span>
-				<span class="bar-text text-right">
-					100
-				</span>
-				<div style="clear: both"></div>
-			</aside>
+		{{bar-graph metrics=controller.age_range_3 barClass="bar-wrap 25-34-years" barTitle="25 - 34 Years of Age" barText=controller.age_range_3_text}}
 		</div><!-- col -->
 		<div class="col">
-			<aside class="bar-wrap 18-24-years">
-				<span class="bar-title bold">
-					Under 45 Years of Age
-				</span>
-				<div class="bar">
-					<div class="metric yellow" style="width: 76.5%;">
-						<span class="number">76.5%</span>
-					</div>
-					<div style="clear: both"></div>
-				</div>
-				<span class="bar-text text-left">
-					0
-				</span>
-				<span class="bar-text text-right">
-					100
-				</span>
-				<div style="clear: both"></div>
-			</aside>
+			{{bar-graph metrics=controller.age_range_4 barClass="bar-wrap under-45-years" barTitle="Under 45 Years of Age" barText=controller.age_range_4_text}}
 		</div><!-- col -->
 	</div><!-- wrap -->
 </section>

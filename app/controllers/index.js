@@ -109,5 +109,37 @@ export default Ember.ArrayController.extend({
 			metricClass: "metric blue",
 			metricStyle: "width: 55%"
 		}
-	]
+	],
+	age_range_1: [
+		{
+			metricNumber: "27.5%",
+			metricClass: "metric blue",
+			metricStyle: "width: 27.5%"
+		}
+	],
+	age_range_1_text: [0,100],
+	age_range_2: [
+		{
+			metricNumber: "15.5%",
+			metricClass: "metric blue",
+			metricStyle: "width: 15.5%"
+		}
+	],
+	age_range_2_text: [0,100],
+	age_range_3: [
+		{
+			metricNumber: "33.5%",
+			metricClass: "metric blue",
+			metricStyle: "width: 33.5%"
+		}
+	],
+	age_range_3_text: [0,100],
+	age_range_4: [
+		{
+			metricNumber: "76.5%",
+			metricClass: "metric yellow",
+			metricStyle: "width: 76.5%"
+		}
+	],
+	age_range_4_text: [0,100],
 });
