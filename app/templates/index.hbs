@@ -6,14 +6,14 @@
 		<p><span>Monthly Website Analytics</span> | smplsc.com</p>
 	</div>
 	<div class="right">
-		{{!-- <p>{{controllers.application.fullDateToParse}}</p> --}}
+		<p>{{controller.report_month}} {{controller.report_year}}</p>
 	</div>
 </header>
 <section id="title" class="page">
 	<div class="wrap">
 		<div class="titles">
 			<h1>Monthly Website Analytics</h1>
-			<h3>October 2014</h3>
+			<h3>{{controller.report_month}} {{controller.report_year}}</h3>
 		</div>
 		<img src="/assets/images/title-page-logo.png" alt="smpl" width="418">
 	</div>
@@ -32,7 +32,7 @@
 		</div><!-- col -->
 		<div class="col">
 			<h3 class="previous-month">Previous Month Comparison</h3>
-			<strong class="previous-month-sessions">231 Sessions in September</strong>
+			<strong class="previous-month-sessions">231 Sessions in {{controller.report_last_month}}</strong>
 			{{vertical-graph metrics=controller.total_sessions_comparison}}
 		</div><!-- col -->
 	</div>
@@ -67,7 +67,7 @@
 		<div class="col no-pad">
 			<aside class="line-graph">
 				<span class="graph-title">
-					95 Tweets in September
+					95 Tweets in {{controller.report_last_month}}
 				</span>
 				<div class="metrics">
 					<div class="text">
@@ -96,7 +96,7 @@
 		<div class="col no-pad">
 			<aside class="line-graph">
 				<span class="graph-title">
-					17 Tweets in September
+					17 Tweets in {{controller.report_last_month}}
 				</span>
 				<div class="metrics">
 					<div class="text">
@@ -130,7 +130,7 @@
 		<div class="col">
 			{{bar-graph metrics=controller.referrals barClass="bar-wrap referrals blue" barTitleNumber="221" barTitleNumberSubHead="Referrals"}}
 			<h3 class="previous-month">Previous Month Comparison</h3>
-			<h5 class="previous-month-referrals">September Referrals</h5>
+			<h5 class="previous-month-referrals">{{controller.report_last_month}} Referrals</h5>
 			<aside class="numbers">
 				<div class="big-number">
 					<span class="number">231</span>
@@ -232,8 +232,8 @@
 				<thead>
 					<tr>
 						<th></th>
-						<th>September</th>
-						<th>October</th>
+						<th>{{controller.report_last_month}}</th>
+						<th>{{controller.report_month}}</th>
 						<th>Increase / Decrease</th>
 					</tr>
 				</thead>
