@@ -1,9 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
-	report_month: "April",
-	report_last_month: "March",
-	report_year: 2015,
 	// Bar Graph Component Data
 	total_sessions: [
 			{
