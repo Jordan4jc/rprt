@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export default Ember.ArrayController.extend({
+export default Ember.ObjectController.extend({
 	report_month: "April",
 	report_last_month: "March",
 	report_year: 2015,
