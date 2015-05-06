@@ -16,32 +16,34 @@ export default Ember.ObjectController.extend({
 				metricStyle: "width: 78%"
 			}
 	],
-	total_sessions_comparison: [
-		[
-			{
-				metricNumber: "26%",
-				metricText: "September",
-				metricStyle: "height: 26%"
-			},
-			{
-				metricNumber: "22%",
-				metricText: "October",
-				metricStyle: "height: 22%"
-			},
-		],
-		[
-			{
-				metricNumber: "74%",
-				metricText: "September",
-				metricStyle: "height: 74%"
-			},
-			{
-				metricNumber: "78%",
-				metricText: "October",
-				metricStyle: "height: 78%"
-			}
-		]
-	],
+	total_sessions_comparison: function() {
+		return [
+			[
+				{
+					metricNumber: "26%",
+					metricText: this.get('last_month'),
+					metricStyle: "height: 26%"
+				},
+				{
+					metricNumber: "22%",
+					metricText: this.get('current_month'),
+					metricStyle: "height: 22%"
+				},
+			],
+			[
+				{
+					metricNumber: "74%",
+					metricText: this.get('last_month'),
+					metricStyle: "height: 74%"
+				},
+				{
+					metricNumber: "78%",
+					metricText: this.get('current_month'),
+					metricStyle: "height: 78%"
+				}
+			]
+		];
+	}.property('last_month','current_month'),
 	mobile_sessions: [
 		{
 			metricNumber: "45",
