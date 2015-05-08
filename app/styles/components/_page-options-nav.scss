@@ -13,6 +13,7 @@ nav.options-bar {
 	text-align: center;
 	z-index: 999;
 	background-color: white;
+	display: none;
 	@include transition(top .5s ease);
 	&.closed {
 		top: -100px;
