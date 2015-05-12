@@ -29,6 +29,6 @@
 	.graph {
 		border-bottom: 1px solid black;
 	}
-	@import "components/bar";
-	@import "components/vertical-graph";
+	@import "../components/bar";
+	@import "../components/vertical-graph";
 }

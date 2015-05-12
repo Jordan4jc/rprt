@@ -5,9 +5,8 @@ var Router = Ember.Router.extend({
   location: config.locationType
 });
 
-Router.map(function() {
-	
-  this.route('report');
+export default Router.map(function() {
+	this.resource('report',function(){
+  	this.route('new',{path: '/new/:month'});
+  });
 });
-
-export default Router;

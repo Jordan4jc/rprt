@@ -1,31 +1,38 @@
-@import 'compass/css3/transition';
+@import '../helpers/variables';
 
-@import 'helpers/variables';
+label {
+	margin-bottom: 12px;
+	display: inline-block;
+}
 
 button, input[type=submit] {
 	border-radius: 3px;
-	border: 2px solid $lightGrey;
-	color: $darkGrey;
-	background-color: white;
+	border: 2px solid darken($primary, 5%);
+	color: white;
+	background-color: $primary;
 	outline: none;
 	padding: 0 24px;
-	height: 30px;
+	height: 44px;
+	line-height: 40px;
 	cursor: pointer;
 	display: inline-block;
-	@include transition(border-color .3s ease);
+	text-align: center;
+	box-sizing: border-box;
+	transition: border-color .3s ease;
+	text-decoration: none;
 	&:hover {
-		border-color: $mediumGrey;
+		border-color: darken($primary, 15%);
 	}
 }
 
 input:not([type=submit]) {
 	border-radius: 3px;
 	border: 2px solid $lightGrey;
-	height: 30px;
+	height: 44px;
 	outline: none;
 	box-sizing: border-box;
 	padding-left: 6px;
-	@include transition(border-color .3s ease);
+	transition: border-color .3s ease;
 	&:hover {
 		border-color: $mediumGrey;
 	}
@@ -48,7 +55,7 @@ input:not([type=submit]) {
     background-position: center right;
     display: inline-block;
     vertical-align: middle;
-    @include transition(border-color .3s ease);
+    transition: border-color .3s ease;
     &:hover {
     	border-color: $mediumGrey
     }
@@ -62,7 +69,7 @@ input:not([type=submit]) {
 	    box-shadow: none;
 	    background-color: transparent;
 	    background-image: none;
-	    @include appearance(none);
+	    -webkit-appearance: none;
 	    &:focus {
 	    	outline: none;
 	    }

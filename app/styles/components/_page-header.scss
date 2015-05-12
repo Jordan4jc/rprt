@@ -1,4 +1,4 @@
-@import 'compass/utilities/general/clearfix';
+@import '../helpers/clearfix';
 
 header.page-header {
 	margin: 0 15px;
@@ -9,7 +9,7 @@ header.page-header {
 	line-height: 48px;
 	font-size: 18px;
 	margin-top: 120px;
-	@include clearfix();
+	@extend %clearfix;
 	font-family: 'rprt-gotham';
 	.left {
 		float: left;

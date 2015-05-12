@@ -1,4 +1,4 @@
-@import "compass/utilities/general/clearfix";
+@import "../helpers/clearfix";
 
 .bar-wrap {
 	span.bar-title {
@@ -104,8 +104,8 @@
 			.metric-label {
 				display: inline-block;
 				white-space: nowrap;
-				@include transform-origin(right, top);
-				@include transform(rotate(-45deg) translateY(-50%));
+				transform-origin: right top;
+				transform: rotate(-45deg) translateY(-50%);
 				position: absolute;
 				right: 50%;
 				bottom: -25px;

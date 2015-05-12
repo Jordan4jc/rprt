@@ -1,6 +1,4 @@
-@import 'compass/css3';
-
-@import 'helpers/variables';
+@import '../helpers/variables';
 
 nav.options-bar {
 	background-color: white;
@@ -14,7 +12,7 @@ nav.options-bar {
 	z-index: 999;
 	background-color: white;
 	display: none;
-	@include transition(top .5s ease);
+	transition: top .5s ease;
 	&.closed {
 		top: -100px;
 	}
@@ -41,7 +39,7 @@ nav.options-bar {
 		line-height: 30px;
 		font-size: 14px;
 		cursor: pointer;
-		@include translateX(-50%);
+		transform: translateX(-50%);
 	}
 	.slct {
 		margin-right: 24px;

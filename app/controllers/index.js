@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
 	// Bar Graph Component Data
+	month:'',
 	total_sessions: [
 			{
 				metricText: "New Sessions",

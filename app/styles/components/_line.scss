@@ -10,7 +10,7 @@
 		display: inline-block;
 	}
 	.metrics {
-		@include clearfix();
+		@extend %clearfix;
 		div.text {
 			float: left;
 			width: 16.6666667%;
@@ -30,8 +30,8 @@
 		div.lines {
 			float: right;
 			width: 83.3333333%;
-			@include clearfix();
-			@include box-sizing(border-box);
+			@extend %clearfix;
+			box-sizing: border-box;
 			padding-left: 6px;
 			div.line {
 				height: 30px;

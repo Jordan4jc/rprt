@@ -1,6 +1,28 @@
-@import 'compass/css3/font-face';
-
-@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-book.woff','/assets/fonts/gotham/gotham-book.otf','/assets/fonts/gotham/gotham-book.ttf','/assets/fonts/gotham/gotham-book.svg'),'/assets/fonts/gotham/gotham-book.eot', normal, normal);
-@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-bold.woff','/assets/fonts/gotham/gotham-bold.otf','/assets/fonts/gotham/gotham-bold.ttf','/assets/fonts/gotham/gotham-bold.svg'),'/assets/fonts/gotham/gotham-bold.eot', 500, normal);
-@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-medium.woff','/assets/fonts/gotham/gotham-medium.otf','/assets/fonts/gotham/gotham-medium.ttf','/assets/fonts/gotham/gotham-medium.svg'),'/assets/fonts/gotham/gotham-medium.eot', 600, normal);
-@include font-face('rprt-gotham', font-files('/assets/fonts/gotham/gotham-black.woff','/assets/fonts/gotham/gotham-black.otf','/assets/fonts/gotham/gotham-black.ttf','/assets/fonts/gotham/gotham-black.svg'),'/assets/fonts/gotham/gotham-black.eot', 700, normal);
+@font-face {
+  font-family: 'rprt-gotham';
+  src:  url('/assets/fonts/gotham/gotham-book.woff2') format('woff2'),
+        url('/assets/fonts/gotham/gotham-book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rprt-gotham';
+  src:  url('/assets/fonts/gotham/gotham-bold.woff2') format('woff2'),
+        url('/assets/fonts/gotham/gotham-bold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rprt-gotham';
+  src:  url('/assets/fonts/gotham/gotham-medium.woff2') format('woff2'),
+        url('/assets/fonts/gotham/gotham-medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rprt-gotham';
+  src:  url('/assets/fonts/gotham/gotham-black.woff2') format('woff2'),
+        url('/assets/fonts/gotham/gotham-black.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

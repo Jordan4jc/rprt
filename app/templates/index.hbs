@@ -1,3 +1,18 @@
 <section id="index" class="page">
-	<h1>Welcome to RPRT</h1>
+	<div class="content">
+		<h1>Welcome to RPRT</h1>
+		<div class="report-form">
+			<div class="input">
+				<label for="month">Report Month</label>
+				{{input value=month name="month"}}
+			</div>
+			<div class="input">
+				<label for="year">Report Year</label>
+				{{input value=year name="year"}}
+			</div>
+			<div class="input">
+				{{#link-to 'report.new' month class="button"}}Generate Report{{/link-to}}
+			</div>
+		</div>
+	</div>
 </section>

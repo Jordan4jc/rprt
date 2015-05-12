@@ -1,5 +1,5 @@
 #page-04 {
-	@import "components/bar";
+	@import "../components/bar";
 	.col {
 		float: none;
 		margin: 0 auto;
@@ -27,7 +27,7 @@
 	}
 	.numbers {
 		color: $secondary;
-		@include clearfix();
+		@extend %clearfix;
 		.big-number {
 			width: 30%;
 			float: left;
@@ -52,13 +52,13 @@
 		.small-numbers {
 			width: 70%;
 			float: right;
-			@include clearfix();
+			@extend %clearfix;
 			margin-bottom: 60px;
 			.metric {
 				float: left;
 				height: 44px;
 				line-height: 44px;
-				@include clearfix();
+				@extend %clearfix;
 				&:nth-of-type(odd) {
 					width: 35%;
 				}
@@ -83,7 +83,7 @@
 					float: right;
 					width: 79%;
 					text-align: left;
-					@include box-sizing(border-box);
+					box-sizing: border-box;
 					padding-left: 10px;
 				}
 			}

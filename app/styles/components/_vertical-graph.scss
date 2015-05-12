@@ -1,6 +1,4 @@
-@import 'compass/css3/transform';
-
-@import 'helpers/variables';
+@import '../helpers/variables';
 
 .graph {
 	height: 430px;
@@ -64,11 +62,11 @@
 			text-transform: uppercase;
 			font-family: "rprt-gotham";
 			font-weight: 500;
-			@include transform-origin(0,0,false);
+			transform-origin: 0,0,false;
 			position: absolute;
 			bottom: 0;
 			left: 50%;
-			@include transform(rotate(-90deg) translateY(-50%));
+			transform: rotate(-90deg) translateY(-50%);
 		}
 		.dark-text {
 			@extend .text;
@@ -82,7 +80,7 @@
 			position: absolute;
 			bottom: -36px;
 			left: 50%;
-			@include translateX(-50%);
+			transform: translateX(-50%);
 		}
 	}
 }
